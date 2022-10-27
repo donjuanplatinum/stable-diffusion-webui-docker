@@ -9,5 +9,7 @@ docker build -t novel:v1
 ```
 docker run -p 7860:7860 -itd --name novel --restart always novel:v1
 docker exec -it novel:v1 bash
-su novel && sh ~/stable-diffusion-webui/webui.sh
+export COMMANDLINE_ARGS=--skip-torch-cuda-test
+python3 stable-diffusion-webui-master/launch.py 
+python3 stable-diffusion-webui-master/launch.py --no-half #CPU硬解
 ```
