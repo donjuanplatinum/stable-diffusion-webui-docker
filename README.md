@@ -1,3 +1,4 @@
+>支持A卡,核显,没有显卡,N卡
 # stable-diffusion-webui-docker
 使用Stable-diffsuion-webui来构建Linux操作系统下的Docker容器
 ##构建方式
