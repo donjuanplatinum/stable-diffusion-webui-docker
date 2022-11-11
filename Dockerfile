@@ -1,5 +1,6 @@
 
 FROM debian:debian11
+COPY run.sh /
 ENV COMMANDLINE_ARGS=--skip-torch-cuda-test
 RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/' \ 
 && apt update && apt install -y python3 python3-pip python3-venv git \
